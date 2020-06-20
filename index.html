@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<title>NJ501 4310</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Fixbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue">
+<div style="margin-right:60%">
+    <a class="w3-bar-item">C4ISR</a>
+</div>
+<div style="margin-left:40%">
+    <a href="file:///G:/FDterdahulu/ELECTRICALGRAPHER/Menu1.1.html" class="w3-bar-item w3-button">Home</a>
+    <a href="file:///G:/FDterdahulu/ELECTRICALGRAPHER/Menu1.1.1.html" class="w3-bar-item w3-button">Automation</a>
+    <a href="file:///G:/FDterdahulu/ELECTRICALGRAPHER/Menu1.1.2.html" class="w3-bar-item w3-button">Robotic</a>
+    <a href="file:///G:/FDterdahulu/ELECTRICALGRAPHER/Menu1.1.3.html" class="w3-bar-item w3-button">Artificial Intelligence</a>
+    <a href="file:///G:/FDterdahulu/ELECTRICALGRAPHER/Menu1.1.4.html" class="w3-bar-item w3-button">ICT for Devence and Security</a>
+  </div>
+</div>
+</div>
+
+<!-- Sidebar -->
+<div style="margin-top:3%">
+<div class="w3-sidebar w3-black w3-bar-block" style="width:20%">
+  <h3 class="w3-bar-item">PLC</h3>
+  <!--<div class="w3-bar-item w3-button" onclick="myAccFunc()">
+  PLC <i class="fa fa-caret-down"></i></div>
+  <div id="demoAcc" class="w3-hide w3-white w3-card-4">
+    <a href="#" class="w3-bar-item w3-button">Link</a>
+    <a href="#" class="w3-bar-item w3-button">Link</a>
+  </div>-->
+  <!--<a href="file:///F:/ELECTRICALGRAPHER/Menu1.1.1.1.1.html" class="w3-bar-item w3-button">Allen-Bradley</a>-->
+	<!--
+	<div class="w3-dropdown-click">
+		<div class="w3-bar-item w3-button" onclick="myDropFunc('demo1')">
+				Allen-Bradley<i class="fa fa-caret-down"></i>
+		</div>
+		<div id="demo1" class="w3-dropdown-content w3-white w3-card-4">
+				<a href="file:///G:/FDterdahulu/ELECTRICALGRAPHER/Menu1.1.1.1.1.html" class="w3-bar-item w3-button">
+				Compact GuardLogix 5370 Controller</a>
+				<a href="#" class="w3-bar-item w3-button">(coming soon)</a>
+		</div>
+	</div>
+  <!--<a href="#" class="w3-bar-item w3-button">Omron</a>-->
+  <!--<div class="w3-dropdown-click">
+	<div class="w3-dropdown-click">
+		<div class="w3-bar-item w3-button" onclick="myDropFunc('demo2')">
+				Omron <i class="fa fa-caret-down"></i>
+		</div>
+		<div id= ="demo2" class="w3-dropdown-content w3-white w3-card-4">
+				<a href="file:///G:/FDterdahulu/ELECTRICALGRAPHER/Menu1.1.1.1.1.html" class="w3-bar-item w3-button">
+				Compact GuardLogix 5370 Controller/a>
+				<a href="#" class="w3-bar-item w3-button">Link</a>
+		</div>
+	</div>
+	-->
+	<div class="w3-container">
+
+<!--<h2>Active Accordions</h2>
+<p>In this example we add the w3-red class to an active accordion (when the button is clicked on and the content is opened).</p>-->
+
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align">Allen-Bradley</button>
+<div id="Demo1" class="w3-hide w3-container">
+    <a href="file:///G:/FDterdahulu/ELECTRICALGRAPHER/Menu1.1.1.1.1.html" class="w3-bar-item w3-button">Compact GuardLogix 5370 Controller</a>
+</div>
+
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-black w3-left-align">Omron</button>
+<div id="Demo2" class="w3-hide w3-container">
+    <a href="file:///G:/FDterdahulu/ELECTRICALGRAPHER/Menu1.1.1.1.2.1.html" class="w3-bar-item w3-button">NX SL3300</a>
+	<a href="file:///G:/FDterdahulu/ELECTRICALGRAPHER/Menu1.1.1.1.2.2.html" class="w3-bar-item w3-button">NJ501 4310</a>
+</div>
+
+<button onclick="myFunction('Demo3')" class="w3-button w3-block w3-black w3-left-align">Beckhoff</button>
+<div id="Demo3" class="w3-hide w3-container">
+    <a href="#" class="w3-bar-item w3-button">(coming soon)</a>
+</div>
+
+<button onclick="myFunction('Demo4')" class="w3-button w3-block w3-black w3-left-align">Siemens</button>
+<div id="Demo4" class="w3-hide w3-container">
+    <a href="#" class="w3-bar-item w3-button">(coming soon)</a>
+</div>
+
+<button onclick="myFunction('Demo4')" class="w3-button w3-block w3-black w3-left-align">LG</button>
+<div id="Demo4" class="w3-hide w3-container">
+    <a href="#" class="w3-bar-item w3-button">(coming soon)</a>
+</div>
+
+<a href="#" class="w3-bar-item w3-button">(Sumber Referensi)</a>
+
+</div>
+</div>
+</div>
+	
+  
+
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-light-blue", "w3-teal");
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-teal", "w3-light-blue");
+  }
+}
+</script>
+
+<!-- Page Content -->
+<div style="margin-left:20%">
+<div style="margin-top:3%">
+
+<div class="w3-center">
+<div class="w3-container w3-teal">
+  <h1>Machine Automation Controller NJ Series NJ Robotics CPU Unit</h1>
+</div>
+</div>
+
+<div class="w3-container">
+<h2>Machine Automation Controller NJ Series NJ Robotics CPU Unit: NJ501 4310</h2>
+<div class="w3-center">
+<img src="NJ5014310.jpg" alt="Car" style="width:30%">
+</div>
+<p>NJ Series tersebut merupakan teknologi kontrol robot menambah fleksibilitas proses pembuatan:
+mesin yang dapat dikonfigurasi ulang dan pergantian cepat. Dimana kontroller tersebut berisi berbagai keuntungan sebagai berikut.
+<li>Fungsionalitas kontrol paralel, Cartesian dan robot seri</li>
+<li>Meningkatkan kecepatan dan presisi kontrol</li>
+<li>Mengurangi waktu pengembangan</li>
+<li>Meminimalkan footprint dan maksimalkan efisiensi</li>
+</p>
+<p>The NJ Robotics controller mengintegrasikan mesin pembawa fleksibilitas baru untuk membangun kontrol
+mesin dan kontrol robot, membangun robot yang dipandu visi dalam 5 langkah. Dimana kontroller tersebut berisi berbagai keuntungan sebagai berikut.
+<li>NJ Robotics controller berada di jantung sistem</li>
+<li>Verifikasi awal yang efisien dengan simulasi terintegrasi</li>
+<li>Pemrograman berskala dan mudah untuk semua jenis robot</li>
+<li>Pengaturan dan penyetelan multi-axis</li>
+<li>Membuat pemrograman mesin Pick & Place lebih mudah.</li>
+</p>
+<p>Spesifikasi NJ501 4310:
+<li>Kapasitas I/O: 2560 point atau 40 unit atau 3 rak ekspansi</li>
+<li>Kapasitas program: 20 MB</li>
+<li>Kapasitas memori variabel: 2 MB (dipertahankan selama kekuasaan gangguan) dan 4 MB (tidak dipertahankan selama kekuasaan gangguan)</li>
+<li>Nomor gerakan axis: 16</li>
+<li>Nomor robot yang dikontrol: 1</li>
+<li>Komsumsi arus: 1.9 A pada 5VDC</li>
+<li>Standar: UC1, N, L, CE, RCM, KC</li>
+</p>
+
+<!--
+
+<h2>Studio 5000 Logix Designer</h2>
+<div class="w3-center">
+<img src="Studio5000.jpg" alt="Car" style="width:30%">
+</div>
+<p>Studio 5000 Logix Designer adalah satu-satunya software PLC untuk mengkonfigurasi,
+memprogram, dan memelihara seluruh rangkaian produk-produk pengontrol dan perangkat
+terkait Allen-Bradley® Logix 5000. Lingkungan pemrogramannya yang intuitif memungkinkan
+pengguna untuk bekerja secara kolaboratif untuk merancang dan memelihara sistem mereka.</p>
+<p>Berikut fitur-fiturnya.</p>
+<li>Single Design Environment – Satu perangkat lunak pemrograman untuk semua disiplin ilmu
+- keselamatan, gerakan, drive, proses, dan diskrit.</li>
+<li>Easy Configuration – pengguna grafis dapatsecara otomatis membuat tag.</li>
+<li>Collaborative Development – Pemrograman modern yang disederhanakan dengan banyak editor
+dan fitur pemrograman modular untuk peningkatan produktivitas.</li>
+<li>Maintain Uptime – Melihat sistem dan mudah menemukan apa yang dibutuhkan dengan tampilan
+Logical Organizer dan Controller Organizer.</li>
+<li>Reduce Time to Market – Membuat kode secara bersamaan dengan yang lain, lalu membandingkan
+dan menggabungkan perubahan.</li>
+<li>Protected Code – Kontrol desain dan eksekusi konten Logix milik pribadi dengan kemampuan
+perlindungan berbasis lisensi untuk membantu memastikan bahwa hanya pengguna yang berwenang
+yang dapat melihat, memodifikasi, atau mengeksekusi.</li>
+<li>Reduce Programming – Fungsionalitas alarm berbasis tag Logix memungkinkan pengguna untuk
+menambahkan alarm secara langsung ke tag atau struktur apa pun dengan klik kanan sederhana
+dan tidak diperlukan pemrograman tambahan.</li>
+<li>Improved Kinematics Support – Perpanjangan instruksi keselamatan untuk instruksi keamanan
+dan gerak berbasis jaringan.</li>
+<li>Reduce Overall Machine Costs – Mendukung penawaran keselamatan yang dapat diskalakan untuk
+memberikan solusi yang lebih tepat, SIL 2 dan SIL 3.</li>
+
+<h2>FactoryTalk View</h2>
+<div class="w3-center">
+<img src="ftview.jpg" alt="Car" style="width:30%">
+</div>
+<p>Perangkat lunak FactoryTalk® View Machine Edition (ME) adalah aplikasi HMI serba guna yang
+menyediakan solusi khusus dan tangguh untuk perangkat antarmuka operator tingkat mesin. Sebagai
+elemen integral dari solusi visualisasi Otomasi Rockwell, FactoryTalk View Machine Edition
+menyediakan grafis yang unggul, manajemen pengguna run-time, alih bahasa dan waktu commissioning
+yang lebih cepat melalui lingkungan pengembangan yang sama.</p>
+<p>FactoryTalk View Machine Edition memungkinkan antarmuka operator yang konsisten di berbagai
+platform, termasuk solusi PanelView Plus dan Windows desktop dan terdiri dari:</p>
+<li>FactoryTalk View Studio: Perangkat lunak konfigurasi untuk mengembangkan dan menguji aplikasi HMI.</li>
+<li>FactoryTalk View ME Station: Solusi HMI "berdiri sendiri" tradisional yang menyediakan antarmuka
+operator terintegrasi yang menjalankan aplikasi HMI yang sama pada PanelView ™ Plus 7, PanelView ™ Plus 6,
+terminal MobileView ™, terminal MobileView Automation, Komputer Industri, atau PC industri lainnya.</li>
+
+
+    </div>
+
+</div>
+-->
+     </div>
+</body>
+</html>
